@@ -45,4 +45,5 @@ it under the same terms as Perl itself.
 # AUTHOR
 
 Tokuhiro Matsuno <tokuhirom@gmail.com>
+
 moznion <moznion@gmail.com>

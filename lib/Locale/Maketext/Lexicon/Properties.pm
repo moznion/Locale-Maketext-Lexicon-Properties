@@ -79,6 +79,7 @@ it under the same terms as Perl itself.
 =head1 AUTHOR
 
 Tokuhiro Matsuno E<lt>tokuhirom@gmail.comE<gt>
+
 moznion E<lt>moznion@gmail.comE<gt>
 
 =cut
