@@ -12,3 +12,7 @@ on test => sub {
     requires 'parent';
     requires 'Test::More', '0.98';
 };
+
+on develop => sub {
+    requires 'Test::Perl::Critic';
+};
