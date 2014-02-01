@@ -11,7 +11,7 @@ use File::Spec::Functions qw/catdir/;
 use FindBin;
 use parent 'Locale::Maketext';
 use Locale::Maketext::Lexicon {
-    ja => [ Properties => catdir($FindBin::Bin, 'multi_byte.property') ],
+    ja => [ Properties => catdir($FindBin::Bin, 'multi_byte.properties') ],
     _decode => 1,
 };
 
