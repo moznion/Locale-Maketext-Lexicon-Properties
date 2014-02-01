@@ -1,7 +1,7 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Properties file parser for Maketext",
    "author" : [
-      "moznion <moznion@gmail.com>"
+      "Tokuhiro Matsuno <tokuhirom@gmail.com>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v0.11.0, CPAN::Meta::Converter version 2.133380",
@@ -67,5 +67,8 @@
          "web" : "https://github.com/moznion/Locale-Maketext-Lexicon-Properties"
       }
    },
-   "version" : "0.01"
+   "version" : "0.01",
+   "x_contributors" : [
+      "moznion <moznion@gmail.com>"
+   ]
 }

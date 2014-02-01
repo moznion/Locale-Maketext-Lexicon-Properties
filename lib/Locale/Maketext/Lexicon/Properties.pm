@@ -35,15 +35,39 @@ __END__
 
 =head1 NAME
 
-Locale::Maketext::Lexicon::Properties - It's new $module
+Locale::Maketext::Lexicon::Properties - Properties file parser for Maketext
 
 =head1 SYNOPSIS
 
+Called via L<Locale::Maketext::Lexicon>:
+
+    package Hello::I18N;
+    use parent 'Locale::Maketext';
+    use Locale::Maketext::Lexicon {
+        en => [ Properties => "en_US/hello.properties" ],
+    };
+
+    package main;
+    my $lh = Hello::I18N->get_handle('en');
+    print $lh->maketext('foo');
+
+Directly calling C<Locale::Maketext::Lexicon::Properties::parse()>:
+
     use Locale::Maketext::Lexicon::Properties;
+    my %lexicon = %{ Locale::Maketext::Lexicon::Properties->parse(<DATA>) };
+    __DATA__
+    foo=bar
+    baz=qux
 
 =head1 DESCRIPTION
 
-Locale::Maketext::Lexicon::Properties is ...
+This module parses .properties file (from Java) for L<Locale::Maketext> by using L<Locale::Maketext::Lexicon>. And it can also returns a Lexicon hash.
+
+You can lookup the property value by specifying key to C<maketext()> or Lexcon hash.
+
+=head1 SEE ALSO
+
+L<Locale::Maketext>, L<Locale::Maketext::Lexicon>
 
 =head1 LICENSE
 
@@ -54,6 +78,7 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
+Tokuhiro Matsuno E<lt>tokuhirom@gmail.comE<gt>
 moznion E<lt>moznion@gmail.comE<gt>
 
 =cut
