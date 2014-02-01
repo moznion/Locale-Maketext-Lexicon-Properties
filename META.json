@@ -43,15 +43,29 @@
       },
       "runtime" : {
          "requires" : {
+            "Encode" : "0",
+            "Locale::Maketext::Lexicon" : "0",
             "perl" : "5.008005"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "Test::More" : "0.98",
+            "parent" : "0"
          }
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/moznion/Locale-Maketext-Lexicon-Properties/issues"
+      },
+      "homepage" : "https://github.com/moznion/Locale-Maketext-Lexicon-Properties",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/moznion/Locale-Maketext-Lexicon-Properties.git",
+         "web" : "https://github.com/moznion/Locale-Maketext-Lexicon-Properties"
+      }
+   },
    "version" : "0.01"
 }

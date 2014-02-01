@@ -2,10 +2,31 @@ package Locale::Maketext::Lexicon::Properties;
 use 5.008005;
 use strict;
 use warnings;
+use utf8;
+use Encode ();
+use Locale::Maketext::Lexicon;
 
 our $VERSION = "0.01";
 
+sub parse {
+    my $self = shift;
 
+    my @out;
+    for (@_) {
+        if (Locale::Maketext::Lexicon::option('decode')) {
+            $_ = Encode::decode_utf8($_);
+        }
+
+        # e.g.
+        #   foo=bar\r\n
+        #   ~~~ ~~~
+        #   $1  $2
+        if (/\A([^=]+)=(.+?)[\015\012]*\z/) {
+            push @out, $1, $2;
+        }
+    }
+    return +{ @out };
+}
 
 1;
 __END__

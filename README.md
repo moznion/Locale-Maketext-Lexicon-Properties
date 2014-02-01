@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/moznion/Locale-Maketext-Lexicon-Properties.png?branch=master)](https://travis-ci.org/moznion/Locale-Maketext-Lexicon-Properties) [![Coverage Status](https://coveralls.io/repos/moznion/Locale-Maketext-Lexicon-Properties/badge.png?branch=master)](https://coveralls.io/r/moznion/Locale-Maketext-Lexicon-Properties?branch=master)
 # NAME
 
 Locale::Maketext::Lexicon::Properties - It's new $module

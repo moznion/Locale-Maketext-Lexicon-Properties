@@ -1,2 +1,2 @@
-name = "Locale-Maketext-Lexicon-Properties"
-# badges = ["travis"]
+name   = "Locale-Maketext-Lexicon-Properties"
+badges = ["travis", "coveralls"]
