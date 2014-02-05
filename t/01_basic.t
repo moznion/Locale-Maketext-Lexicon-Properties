@@ -26,4 +26,6 @@ ok $@, 'Specify not exists key';
 eval { $lh->maketext('ほげ') };
 ok $@, 'Specify multi byte character as key';
 
+is $lh->maketext('bar'), "moznion\nstudio3104";
+
 done_testing;
