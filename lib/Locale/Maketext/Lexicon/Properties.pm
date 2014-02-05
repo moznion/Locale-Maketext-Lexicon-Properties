@@ -6,7 +6,7 @@ use utf8;
 use Encode ();
 use Locale::Maketext::Lexicon;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 sub parse {
     my $self = shift;
